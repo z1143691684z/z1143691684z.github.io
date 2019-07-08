@@ -1,6 +1,6 @@
 ## 10170356曾雨欣
 
-算法相关数据在[数据]（https://github.com/z1143691684z/z1143691684z.github.io/tree/master/数据)
+算法相关数据在[数据](https://github.com/z1143691684z/z1143691684z.github.io/tree/master/数据)
 
 ### [1.跳马](https://z1143691684z.github.io/作业/跳马.html)
 ### [2.空间编码](https://z1143691684z.github.io/作业/空间编码.html)
