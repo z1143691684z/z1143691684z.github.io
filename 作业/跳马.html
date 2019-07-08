@@ -1,4 +1,4 @@
-<DOCTYPRE html>
+ï»¿<DOCTYPRE html>
 
 <html>
 
@@ -6,7 +6,7 @@
 
 <title>
 
-ÌøÂí
+è·³é©¬
 
 </title>
 
@@ -16,11 +16,11 @@
 
 <body> 
 
-<!ÊäÈë¿òÉè¼Æ>
+<!è¾“å…¥æ¡†è®¾è®¡>
 
 <form action="/test.php" method="get">
 
-ÌøÂí
+è·³é©¬
 
 <br><br><br>
 
@@ -31,27 +31,27 @@
 
 <hr>
 
-ÆåÅÌÉè¼Æ:
+æ£‹ç›˜è®¾è®¡:
 
 <br>
 
-ÆåÅÌĞĞÊı:<input type="number" name="row" id="row" min="0" max="10" />
+æ£‹ç›˜è¡Œæ•°:<input type="number" name="row" id="row" min="0" max="10" />
 
-ÆåÅÌÁĞÊı:<input type="number" name="column" id="column" min="0" max="10"/>
+æ£‹ç›˜åˆ—æ•°:<input type="number" name="column" id="column" min="0" max="10"/>
 
 <hr>
 
-Ô­Ê¼ÆğÌøµã:
+åŸå§‹èµ·è·³ç‚¹:
 
 <br>
 
-ÆğÌøµãËùÔÚĞĞ:<input type="number" name="fromRow" id="fromRow" min="0" max="10" />
+èµ·è·³ç‚¹æ‰€åœ¨è¡Œ:<input type="number" name="fromRow" id="fromRow" min="0" max="10" />
 
-ÆğÌøµãËùÔÚÁĞ:<input type="number" name="fromColumn" id="fromColumn" min="0" max="10"/>
+èµ·è·³ç‚¹æ‰€åœ¨åˆ—:<input type="number" name="fromColumn" id="fromColumn" min="0" max="10"/>
 
 <br>
 
-<input type="submit" value="È·¶¨" onclick="main()"/>
+<input type="submit" value="ç¡®å®š" onclick="main()"/>
 
 </form>
 
@@ -61,9 +61,9 @@
 
 <script>
 
-var direction=8; //ÌøÔ¾·½Ïò
+var direction=8; //è·³è·ƒæ–¹å‘
 
-var MAX_STEP=50; //×î´ó²½Êı
+var MAX_STEP=50; //æœ€å¤§æ­¥æ•°
 
 var num=0;
 
@@ -77,11 +77,11 @@ for(var i=0;i<(MAX_STEP+1);i++){
 
 path[i]=new Array(2);
 
-}//´æÂ·¾¶
+}//å­˜è·¯å¾„
 
-var dx=new Array( 0, 1, 2, 2, 1, -1, -2, -2, -1);//±íÊ¾·½Ïò
+var dx=new Array( 0, 1, 2, 2, 1, -1, -2, -2, -1);//è¡¨ç¤ºæ–¹å‘
 
-var dy=new Array( 0, 2, 1, -1, -2, 2, 1, -1, -2);//±íÊ¾·½Ïò
+var dy=new Array( 0, 2, 1, -1, -2, 2, 1, -1, -2);//è¡¨ç¤ºæ–¹å‘
 
 
 
@@ -113,7 +113,7 @@ var judge = false;
 
 
 
-if (xy[y][x]!=0)//ÖØ¸´½áµã£¬´íÎóÂ·¾¶
+if (xy[y][x]!=0)//é‡å¤ç»“ç‚¹ï¼Œé”™è¯¯è·¯å¾„
 
 judge = true; 
 
@@ -121,7 +121,7 @@ else
 
 xy[y][x] = 1;
 
-return judge;//falseÎª¿ÉĞĞÂ·¾¶
+return judge;//falseä¸ºå¯è¡Œè·¯å¾„
 
 }
 
@@ -141,7 +141,7 @@ Path(MAX_X, MAX_Y,step,xy);
 
 for (var k = 1; k <= direction; k++){
 
-//³¯°Ë¸ö·½ÏòÖĞµÄÄ³¸ö·½ÏòÌøÔ¾
+//æœå…«ä¸ªæ–¹å‘ä¸­çš„æŸä¸ªæ–¹å‘è·³è·ƒ
 
 x1 = x + dx[k];
 
@@ -149,7 +149,7 @@ y1 = y + dy[k];
 
 
 
-//Ìø³ö±ß½ç£¬½øÈëÏÂÒ»ÖÖÂ·¾¶µÄ²éÕÒ
+//è·³å‡ºè¾¹ç•Œï¼Œè¿›å…¥ä¸‹ä¸€ç§è·¯å¾„çš„æŸ¥æ‰¾
 
 if (x1 > MAX_X || y1 > MAX_Y || x1 < 0 || y1 < 0)
 
@@ -157,11 +157,11 @@ continue;
 
 
 
-t1 = (x1 >= 0) && (x1 <= MAX_X);//×óÓÒ±ß½çÄÚ
+t1 = (x1 >= 0) && (x1 <= MAX_X);//å·¦å³è¾¹ç•Œå†…
 
-t2 = (y1 >= 0) && (y1 <= MAX_Y);//ÉÏÏÂ±ß½çÄÚ
+t2 = (y1 >= 0) && (y1 <= MAX_Y);//ä¸Šä¸‹è¾¹ç•Œå†…
 
-//±ß½ç
+//è¾¹ç•Œ
 
 
 
@@ -171,11 +171,11 @@ t4 = (y1 == path[0][1]);
 
 
 
-if (t1 && t2){//ÔÚÆåÅÌÄÚ
+if (t1 && t2){//åœ¨æ£‹ç›˜å†…
 
-//¼ÇÂ¼Î»ÖÃ
+//è®°å½•ä½ç½®
 
-if (!Judgment(x1, y1,xy)){//·µ»Øfalse±íÊ¾Ã»ÓĞÖØ¸´£¬¿ÉÒÔ¼ÌĞøÑ°ÕÒÂ·¾¶
+if (!Judgment(x1, y1,xy)){//è¿”å›falseè¡¨ç¤ºæ²¡æœ‰é‡å¤ï¼Œå¯ä»¥ç»§ç»­å¯»æ‰¾è·¯å¾„
 
 //continue;
 
@@ -191,7 +191,7 @@ if (t3 && t4){
 
 num++;
 
-document.write("·½°¸"+num+":");
+document.write("æ–¹æ¡ˆ"+num+":");
 
 
 
@@ -229,13 +229,13 @@ Jump(MAX_X, MAX_Y,x1, y1, step + 1,xy);
 
 function main(){
 
-//³õÊ¼Î»ÖÃ 
+//åˆå§‹ä½ç½® 
 
 
 
-var MAX_X; //XÖá×î´ó±ß½ç
+var MAX_X; //Xè½´æœ€å¤§è¾¹ç•Œ
 
-var MAX_Y; //YÖá×î´ó±ß½ç
+var MAX_Y; //Yè½´æœ€å¤§è¾¹ç•Œ
 
 var a,b;
 
@@ -259,7 +259,7 @@ b=path[0][1]=document.getElementById("fromRow").value;
 
 if(MAX_X>10 || MAX_Y>10 || a>10 ||b>10 || (a+1)>MAX_X || (b+1)>MAX_Y){
 
-document.write("¾Ü¾ø·şÎñ£¡Çë°´ÕÕ¹æ·¶ÊäÈëÊı¾İ");
+document.write("æ‹’ç»æœåŠ¡ï¼è¯·æŒ‰ç…§è§„èŒƒè¾“å…¥æ•°æ®");
 
 }
 
@@ -285,11 +285,11 @@ xy[i][j]=0;
 
 Jump(MAX_X, MAX_Y,0, 0, 1,xy);
 
-document.write("×Ü·½°¸Êı"+ num); 
+document.write("æ€»æ–¹æ¡ˆæ•°"+ num); 
 
 if(num==0){
 
-document.write("Î´ÕÒµ½!");
+document.write("æœªæ‰¾åˆ°!");
 
 }
 
@@ -301,6 +301,6 @@ document.write("Î´ÕÒµ½!");
 
 </body>
 
-</»ØÍ·ml>
+</å›å¤´ml>
 
 </DOCTYPRE>
